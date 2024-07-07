@@ -74,7 +74,7 @@ export default function Home() {
               {nfts.length ? (
                 nfts.map((nft) => <NftCard key={nft.id} nft={nft} />)
               ) : (
-                <p>No NFTs</p>
+                <p className='col-span-4 text-center'>No NFTs</p>
               )}
             </>
           )}

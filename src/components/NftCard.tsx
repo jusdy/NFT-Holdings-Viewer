@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 import clsx from 'clsx'
 import { Metadata } from '@/types'
+
+import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function NftCard({
   nft,
