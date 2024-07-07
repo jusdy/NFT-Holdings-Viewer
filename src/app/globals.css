@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-800 text-white;
+  @apply bg-slate-800 text-white;
+}
+
+.container {
+  @apply mx-auto w-full max-w-[1536px] px-12 lg:px-8 sm:px-4;
 }

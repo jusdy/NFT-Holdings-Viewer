@@ -17,6 +17,7 @@ This is a simple web application that allows users to enter an Ethereum wallet a
 git clone https://github.com/your-username/nft-holdings-viewer.git
 cd nft-holdings-viewer
 ```
+
 2. Install dependencies:
 
 ```bash

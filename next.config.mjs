@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['i.seadn.io'],
-    },
-};
+  images: {
+    domains: ['i.seadn.io'],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
