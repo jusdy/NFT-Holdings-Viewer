@@ -1,4 +1,4 @@
-import { NextApiRequest } from 'next';
+import { type NextRequest } from 'next/server'
 import axios from 'axios';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import { NextResponse } from 'next/server';
@@ -10,7 +10,7 @@ const API_KEY = process.env.OPENSEA_API_KEY;
 // Create a cache instance with a standard TTL of 300 seconds (5 minutes)
 const cache = new NodeCache({ stdTTL: 300 });
 
-export async function GET(_req: NextApiRequest, context: { params: Params }) {
+export async function GET(_req: NextRequest, context: { params: Params }) {
   const { wallet } = context.params;
 
   if (!wallet || typeof wallet !== 'string') {
